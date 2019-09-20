@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+nav {
+  height: 100vh;
+  width: 10vw;
+}
+
+nav ul {
+  padding-top: 30vh;
+}
+
+nav ul li {
+  list-style-type: none;
+  margin: 25% 35%;
+}
+
+nav ul li a img {
+  height: 30px;
+  transition: all 1s;
+  width: 30px;
+}
+
+nav ul li a img:hover {
+  transform: scale(2.5) rotate(360deg);
+}
+
+#mainContent {
+  height: 100vh;
+  padding-left: 5%;
+  width: 90vw;
+}
+
+#mainContent p {
+  font-family: 'Lobster Two', cursive;
+  font-size: 20px;
+}
+
+.topDiv {
+  height: 20vh;
+  margin: 0;
+  padding: 0;
+}
+
+.topDiv h2 {
+  font-family: 'Lobster';
+  font-size: 75px;
+  margin-right: 10%;
+  margin-top: 2.5%;
+  text-align: center;
+}

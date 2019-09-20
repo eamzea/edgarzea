@@ -1,0 +1,129 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+nav {
+  height: 100vh;
+  width: 10vw;
+}
+
+nav ul {
+  padding-top: 30vh;
+}
+
+nav ul li {
+  list-style-type: none;
+  margin: 25% 35%;
+}
+
+nav ul li a img {
+  height: 30px;
+  transition: all 1s;
+  width: 30px;
+}
+
+nav ul li a img:hover {
+  transform: scale(2.5) rotate(360deg);
+}
+
+#mainContent {
+  height: 100vh;
+  padding-left: 5%;
+  width: 90vw;
+}
+
+.topDiv {
+  animation-name: nameTitle;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  height: 20vh;
+}
+
+@keyframes nameTitle {
+  0% {
+    opacity: 0;
+    transform: scale(0.1);
+  }
+  50% {
+    opacity: .5;
+    transform: scale(1.25);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.topDiv h2 {
+  font-family: 'Lobster';
+  font-size: 75px;
+  margin-right: 10%;
+  text-align: center;
+}
+
+.centralContent {
+  display: flex;
+  height: 80vh;
+  flex-wrap: nowrap;
+}
+
+.networks {
+  width: 25%;
+}
+
+.networks div {
+  height: 16.5%;
+}
+
+.networks img {
+  display: block;
+  margin-left: 50%;
+  transition: all 1s;
+  width: 2.5vw;
+}
+
+.networks img:hover {
+  transform: scale(1.5);
+}
+
+.forms {
+  width: 100%;
+}
+
+form {
+  font-family: 'Comfortaa', cursive;
+  margin-left: 25%;
+}
+
+.forms input {
+  border: black 1px solid;
+  border-radius: 15px;
+  display: block;
+  font-family: 'Comfortaa', cursive;
+  height: 5vh;
+  margin: 1.5% 0;
+  padding-left: 2.5%;
+  width: 25%;
+}
+
+::placeholder {
+  margin-left: 5%;
+}
+
+button {
+  border-radius: 25px;
+  font-family: 'Comfortaa', cursive;
+  font-size: 1.5vw;
+  font-weight: 200;
+  height: 40px;
+  letter-spacing: 3px;
+  margin-left: 15%;
+  margin-top: 4%;
+  width: 25%;
+}

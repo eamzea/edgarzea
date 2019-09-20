@@ -1,0 +1,603 @@
+* {
+    font-family: 'Lato', sans-serif;
+}
+
+@media (min-width: 1050px) {
+
+body {
+    margin: 0;
+}
+
+.Boxes {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    }
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:visited {
+    color: #097B84;
+}
+
+a:link {
+    color: #097B84;
+}
+
+ul a {
+  transition: all 2s;
+}
+
+ul a:hover {
+    background-color: #F8F8F8;
+    font-size: 17px;
+}
+
+ul {
+    list-style-type: none;
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 90%;
+}
+
+li {
+    display: inline;
+    float: left;
+    text-align: center;
+    border-right: 1px solid #111;
+}
+
+li a {
+    display: block;
+    padding: 10px;
+}
+
+.HPage {
+    display: block;
+}
+
+#NavLogo {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+#logo {
+    height: 47%;
+    width: 47%;
+    display: block;
+    margin-top: 8%;
+    margin-left: 25%;
+}
+
+.Boxes {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+#AboutUs {
+    margin: 20px;
+}
+
+#AboutUsPyImg {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+h3 {
+    font-size: 32px;
+    margin: 0%;
+}
+
+#Us {
+    display: inline;
+    width: 50%;
+    flex-wrap: wrap;
+}
+
+#Us p {
+    font-size: 20px;
+    text-align: justify;
+}
+
+#logoRight {
+    display: inline;
+    width: 50%;
+}
+
+#blue {
+    width: 65%;
+    height: 60%;
+    padding: 10%;
+}
+
+#Services {
+    margin: 20px;
+}
+
+#DyOPyI {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#DesignOrtography {
+    width: 33%;
+}
+
+h4 {
+    font-size: 26px;
+}
+
+#DesignOrtography p {
+    text-align: justify;
+    font-size: 20px;
+}
+
+#iconsDyO {
+    width: 100%;
+    display: flex;
+}
+
+#iconsD {
+    width: 50%;
+}
+
+#Design {
+    height: 100px;
+    width: 100px;
+}
+
+#Ortography {
+    width: 50%;
+}
+
+#imgO {
+    height: 100px;
+    width: 100px;
+}
+
+#ShadeLogo {
+    width: 33%;
+}
+
+#shade {
+    height: 47.5%;
+    width: 45%;
+    padding: 25%;
+}
+
+#Digitalizacion {
+    width: 33%;
+}
+
+#Digitalizacion p {
+    font-size: 20px;
+    text-align: justify;
+}
+
+#DigitalT {
+    height: 50%;
+}
+
+#iconsDigital {
+    width: 100%;
+    display: flex;
+}
+
+#iconsScan {
+    width: 33%;
+    padding: 5%;
+}
+
+#scan {
+    height: 100%;
+    width: 100%;
+}
+
+#iconsMac {
+    width: 33%;
+    padding: 5%;
+}
+
+#Mac {
+    height: 100%;
+    width: 100%;
+}
+
+#iconsMobile {
+    width: 33%;
+    padding: 5%;
+}
+
+#Mobile {
+    height: 100%;
+    width: 100%;
+}
+
+#Advantages {
+  margin: 0 20px;
+}
+
+#Sentences p {
+    font-size: 20px;
+    line-height: 200%;
+}
+
+#AdvImg {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#Sentences {
+  width: 50%;
+}
+
+#CornerShadeLogo {
+  width: 50%;
+}
+
+#CornerShade {
+  padding-left: 15%;
+  width: 75%;
+}
+
+#footer {
+    background-color: #575756;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#Info {
+    display: flex;
+    width: 25%;
+}
+
+#Info p {
+    margin: 10%;
+    font-weight: 600;
+}
+
+#SocialMedia {
+    width: 70%;
+    margin: 0%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#footer img {
+    height: 20%;
+    width: 20%;
+}
+
+#FB {
+    width: 20%;
+    text-align: center;
+}
+
+#Lkdn {
+    width: 20%;
+    text-align: center;
+}
+
+#Insta {
+    width: 20%;
+    text-align: center;
+}
+
+#Email {
+    width: 25%;
+    text-align: center;
+}
+}
+
+@media (max-width: 570px) {
+    body {
+      margin: 0px;
+  }
+
+  .Boxes {
+      margin-top: 10%;
+      }
+
+  header {
+    width: 100%;
+    height: 100px;
+    }
+
+  nav {
+    width:100%;
+    height: 100px;
+    }
+
+  a {
+      text-decoration: none;
+      font-weight: bold;
+  }
+
+  a:visited {
+      color: #097B84;
+  }
+
+  a:link {
+      color: #097B84;
+  }
+
+  ul a:hover {
+      background-color: #F8F8F8;
+      font-size: 15px;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: fixed;
+    background-color: white;
+    width: 100%;
+  }
+
+  li {
+    text-align: center;
+    font-size: 14px;
+  }
+
+  li a {
+    display: block;
+    padding: 1px;
+  }
+
+  #NavLogo {
+      width: 100%;
+      height: 100%;
+      align: center;
+  }
+
+  #logo {
+      height: 50%;
+      width: 50%;
+      margin-top: 5%;
+      margin-left: 25%;
+  }
+
+#AboutUs {
+    margin: 10px;
+}
+
+#AboutUsPyImg {
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+h3 {
+    font-size: 24px;
+    margin: 0%;
+}
+
+#Us {
+    width: 100%;
+}
+
+#Us p {
+    font-size: 18px;
+    text-align: justify;
+}
+
+#logoRight {
+    display: ;
+    width: 100%;
+    height: 100%;
+}
+
+#blue {
+    width: 50%;
+    height: 50%;
+    margin-left: 25%;
+}
+
+#Services {
+    margin: 10px;
+}
+
+  #DyOPyI {
+    width: 100%;
+    }
+
+  #DesignOrtography {
+    width: 100%;
+    }
+
+  h4 {
+    font-size: 20px;
+}
+
+  #DyO {
+    width: 100%;
+    }
+
+  #DesignOrtography p {
+    text-align: justify;
+    font-size: 18px;
+}
+
+  #dYoT {
+    width: 100%;
+    }
+
+  #iconsDyO {
+    width: 100%;
+
+}
+
+  #iconsD {
+    width: 100%;
+    height: 100%;
+    }
+
+#Design {
+  width: 50%;
+  height: 50%;
+  margin-left: 25%;
+}
+
+#Ortography {
+  width: 100%;
+  height: 100%;
+  }
+
+#imgO {
+  height: 50%;
+  width: 50%;
+  margin-left: 25%;
+}
+
+#ShadeLogo {
+  display: none;
+  }
+
+#Digitalizacion {
+  width: 100%;
+  padding: 12% 0;
+  }
+
+#Digitalizacion p {
+    font-size: 18px;
+    text-align: justify;
+}
+
+#DigitalT {
+    height: 100%;
+    }
+
+#iconsDigital {
+    width: 100%;
+    display: flex;
+
+}
+
+#iconsScan {
+    width: 33%;
+    padding: 5%;
+}
+
+#scan {
+    height: 100%;
+    width: 100%;
+}
+
+#iconsMac {
+    width: 33%;
+    padding: 5%;
+}
+
+#Mac {
+    height: 100%;
+    width: 100%;
+}
+
+#iconsMobile {
+    width: 33%;
+    padding: 5%;
+}
+
+#Mobile {
+    height: 100%;
+    width: 100%;
+}
+
+#Advantages {
+  margin: 10px;
+}
+
+#Sentences p {
+    font-size: 18px;
+    line-height: 200%;
+}
+
+#AdvImg {
+    display: block;
+}
+
+#Sentences {
+  width:100%;
+  text-align: justify;
+}
+
+  #Sentences img {
+    display: block;
+    margin-left: 45%;
+    padding-top: 5%;
+  }
+
+#CornerShadeLogo {
+  width: 100%;
+}
+
+#CornerShade {
+    height: 30%;
+    width: 50%;
+  margin-left: 50%;
+    }
+
+footer {
+  background-color: #575756;
+  padding: 2px 0;
+  }
+
+#Info {
+  width: 90%;
+  }
+
+#Info p {
+  width: 100%;
+  margin: 10px;
+  font-weight: 600;
+  font-size: 10px;
+  }
+
+#SocialMedia {
+  width: 95%;
+  margin: 10px;
+  align-items: center;
+  display: flex;
+  flex-wrap: no-wrap;
+  }
+
+  #SocialMedia a{
+    font-size: 10px;
+  }
+
+#footer img {
+  height: 100%;
+  width: 25%;
+  margin: 0;
+  }
+
+#FB {
+    width: 25%;
+    text-align: center;
+}
+
+#Lkdn {
+    width: 25%;
+    text-align: center;
+}
+
+#Insta {
+    width: 25%;
+    text-align: center;
+}
+
+#Email {
+    width: 25%;
+    text-align: center;
+}
+}

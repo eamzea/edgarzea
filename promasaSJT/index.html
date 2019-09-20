@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Promasa SJT Comercial">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Barlow:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link rel="icon" type="image/ico" href="images/Favicon.ico" sizes="16x16"/>
+    <link rel="icon" type=”image/png” href="images/favicon.png" sizes="16x16"/>
+    <script href="../javascript/script.js"></script>
+    <title>Promasa SJT Comercial</title>
+  </head>
+  <body>
+    <header>
+      <div id="topp">
+        <div id="homeimg">
+          <a href="index.html">
+            <img id="promasaWhite" src="images/isologoBlanco.png" alt="Promasa SJT Comercial">
+          </a>
+        </div>
+        <nav>
+          <ul>
+            <li>
+              <a href="index.html">Inicio</a>
+            </li>
+            <li>
+              <a href="persianas.html">Persianas</a>
+            </li>
+            <li>
+              <a href="pisos.html">Pisos</a>
+            </li>
+            <li>
+              <a href="alfombras.html">Alfombras</a>
+            </li>
+            <li>
+              <a href="contactanos.html">Contáctanos</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div id="galery">
+        <button id="buttonLeft" class="buttonGalery" onclick="plusDivs(-1)">&#10094;</button>
+        <img class="galeryHome" src="images/galeria1.jpg">
+        <img class="galeryHome" src="images/galeria2.jpg">
+        <img class="galeryHome" src="images/galeria3.jpg">
+        <img class="galeryHome" src="images/galeria4.jpg">
+        <img class="galeryHome" src="images/galeria5.jpg">
+        <img class="galeryHome" src="images/galeria6.jpg">
+        <button id="buttonRight" class="buttonGalery" onclick="plusDivs(+1)">&#10095;</button>
+      </div>
+    </main>
+    <script type="text/javascript">
+    var slideIndex = 1;
+    showDivs(slideIndex);
+
+    function plusDivs(n) {
+    showDivs(slideIndex += n);
+    }
+
+    function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("galeryHome");
+    if (n > x.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = x.length}
+    for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+    }
+    x[slideIndex-1].style.display = "block";
+    }
+    </script>
+    <div id="middle">
+      <div class="middle">
+        <h2>Promasa SJT<br>Comercial</h2>
+        <p>Persianas / Pisos Laminados / Toldos / Alfombras / Pasto sintético / Motorizadas / Cortinas / Puertas Plegables / Deck</p>
+      </div>
+      <div id="middleGaleriaRight" class="middle">
+        <div >
+          <img class="middleGaleria" src="images/galeriaHome1.png" alt="">
+        </div>
+        <div>
+          <img class="middleGaleria" src="images/galeriaHome2.jpg" alt="">
+        </div>
+        <div>
+          <img class="middleGaleria" src="images/galeriaHome3.jpg" alt="">
+        </div>
+        <div>
+          <img class="middleGaleria" src="images/galeriaHome4.jpg" alt="">
+        </div>
+        <div>
+          <img class="middleGaleria" src="images/galeriaHome5.jpg" alt="">
+        </div>
+        <div>
+          <img class="middleGaleria" src="images/galeriaHome6.jpg" alt="">
+        </div>
+        <div>
+          <img class="middleGaleria" src="images/galeriaHome7.jpg" alt="">
+        </div>
+        <div>
+          <img class="middleGaleria" src="images/galeriaHome8.png" alt="">
+        </div>
+        <div>
+          <img class="middleGaleria" src="images/galeriaHome9.jpg" alt="">
+        </div>
+      </div>
+    </div>
+    <div id="clientes">
+      <h2>Nuestros Clientes</h2>
+      <div class="clientesGaleria">
+        <div>
+          <img id="cliente1" src="images/cliente1.jpg" alt="">
+        </div>
+        <div>
+          <img id="cliente2" src="images/cliente2.png" alt="">
+        </div>
+        <div>
+          <img id="cliente3" src="images/cliente3.png" alt="">
+        </div>
+        <div>
+          <img id="cliente4" src="images/cliente4.jpg" alt="">
+        </div>
+        <div>
+          <img id="cliente5" src="images/cliente5.png" alt="">
+        </div>
+        <div>
+          <img id="cliente6" src="images/cliente6.jpg" alt="">
+        </div>
+        <div>
+          <img id="cliente7" src="images/cliente7.png" alt="">
+        </div>
+        <div>
+          <img id="cliente8" src="images/cliente8.png" alt="">
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="isologoFooter">
+        <img id="promasaWhiteFooter" src="images/isologoBlanco.png" alt="Promasa SJT Comercial">
+      </div>
+      <div class="information">
+        <h2>QUIENES SOMOS:</h2>
+        <br>
+        <p>
+          UNA EMPRESA QUE MIRA AL FUTURO CON LIDERAZGO Y ENFOQUE EN EL MEJOR SERVICIO, SE PREOCUPA POR SATISFACER LAS NECESIDADES DEL CLIENTE AL DISTRIBUIR Y PROPORCIONAR DE MANERA OPORTUNA Y EFICIENTE PRODUCTOS Y SERVICIOS ACORDE A SUS NECESIDADES.
+          <br>
+          <br>
+          LA EXPERIENCIA DE PROMASA SJT COMERCIAL, ESTA SUSTENTADA EN EL MERCADO DESDE HACE MAS DE DOS DECADAS AL INICIAR OPERACIONES EN LA CIUDAD DE MEXICO.
+          PROPORCIONA UNA ALTERNATIVA CON VENTAJAS COMPETITIVAS EN TIEMPO Y COSTO PARA LAS DIVERSAS NECESIDADES DE DISTINTOS SECTORES.
+        </p>
+      </div>
+      <div class="socialMedia">
+        <p>SÍGUENOS</p>
+        <div class="socialMediaIcons">
+          <div>
+            <a href="#"><img id="facebook" src="images/Facebook Black.png"></a>
+          </div>
+          <div>
+            <a href="#"><img id="instagram" src="images/instagram.svg"></a>
+          </div>
+          <div>
+            <a href="mailto:promasasjt@hotmail.com?Subject="><img id="email" src="images/email.svg"></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
