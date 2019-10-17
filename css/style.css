@@ -1,156 +1,313 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-}
-
-body {
-  display: flex;
-  flex-wrap: nowrap;
-}
-
-nav {
-  height: 100vh;
-  width: 10vw;
-}
-
-nav ul {
-  padding-top: 30vh;
-}
-
-nav ul li {
-  list-style-type: none;
-  margin: 25% 35%;
-}
-
-nav ul li a img {
-  height: 30px;
-  transition: all 1s;
-  width: 30px;
-}
-
-nav ul li a img:hover {
-  transform: scale(2.5) rotate(360deg);
-}
-
-#mainContent {
-  height: 100vh;
-  padding-left: 5%;
-  width: 90vw;
-}
-
-.topDiv {
-  animation-name: nameTitle;
-  animation-duration: 2s;
-  animation-timing-function: linear;
-  height: 20vh;
-}
-
-@keyframes nameTitle {
-  0% {
-    opacity: 0;
-    transform: scale(0.1);
+@media (min-width: 769px) {
+  * {
+    box-sizing: border-box;
+    margin: 0;
   }
-  50% {
-    opacity: .5;
-    transform: scale(1.25);
+
+  body {
+    display: flex;
+    flex-wrap: nowrap;
   }
-  100% {
+
+  nav {
+    height: 100vh;
+    width: 10vw;
+  }
+
+  nav ul {
+    padding-top: 30vh;
+  }
+
+  nav ul li {
+    list-style-type: none;
+    margin: 25% 35%;
+  }
+
+  nav ul li a img {
+    height: 30px;
+    transition: all 1s;
+    width: 30px;
+  }
+
+  nav ul li a img:hover {
+    transform: scale(2.5) rotate(360deg);
+  }
+
+  #mainContent {
+    height: 100vh;
+    padding-left: 5%;
+    width: 90vw;
+  }
+
+  .topDiv {
+    animation-name: nameTitle;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    height: 20vh;
+  }
+
+  @keyframes nameTitle {
+    0% {
+      opacity: 0;
+      transform: scale(0.1);
+    }
+    50% {
+      opacity: .5;
+      transform: scale(1.25);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  .topDiv h2 {
+    font-family: 'Lobster';
+    font-size: 75px;
+    margin-right: 10%;
+    text-align: center;
+  }
+
+
+  .centralContent {
+    display: flex;
+    height: 80vh;
+    flex-wrap: nowrap;
+  }
+
+  .leftDiv {
+    width: 25%;
+  }
+
+  .leftDiv h3 {
+    animation-name: hide;
+    animation-duration: 4s;
+    font-family: 'Lobster', cursive;
+    font-size: 50px;
+    padding-top: 50%;
+    text-align: left;
+  }
+
+  .leftDiv p {
+    animation-name: hide;
+    animation-duration: 4s;
+    font-family: 'Lobster Two', cursive;
+    font-size: 25px;
+    text-align: left;
+  }
+
+  @keyframes hide {
+    0% {
+      transform: rotate(0);
+      opacity: 0;
+    }
+
+    25% {
+      transform: rotate(360deg);
+    }
+
+    50% {
+      transform: rotate(360deg);
+      opacity: .1;
+    }
+
+    75% {
+      transform: rotate(360deg);
+      opacity: .3;
+    }
+
+    95% {
+      opacity: .9;
+    }
+
+    100% {
+      transform: rotate(360deg);
+      opacity: 1;
+    }
+  }
+
+  .rightDiv {
+    height: 80vh;
+    width: 75%;
+  }
+
+  .rightDiv img {
+    animation: start 3s;
+    border-radius: 35%;
+    height: 75vh;
+    margin-left: 25%;
     opacity: 1;
-    transform: scale(1);
+    transition: all 1s;
+  }
+
+  .rightDiv img:hover {
+    transform: scale(1.1);
+  }
+
+  @keyframes start {
+    from {
+      transform: translateX(-1050px);
+      opacity: 0;
+    }
+
+    to {
+      transform: translateX(0px);
+      opacity: 1;
+    }
   }
 }
 
-.topDiv h2 {
-  font-family: 'Lobster';
-  font-size: 75px;
-  margin-right: 10%;
-  text-align: center;
-}
-
-
-.centralContent {
-  display: flex;
-  height: 80vh;
-  flex-wrap: nowrap;
-}
-
-.leftDiv {
-  width: 25%;
-}
-
-.leftDiv h3 {
-  animation-name: hide;
-  animation-duration: 4s;
-  font-family: 'Lobster', cursive;
-  font-size: 50px;
-  padding-top: 50%;
-  text-align: left;
-}
-
-.leftDiv p {
-  animation-name: hide;
-  animation-duration: 4s;
-  font-family: 'Lobster Two', cursive;
-  font-size: 25px;
-  text-align: left;
-}
-
-@keyframes hide {
-  0% {
-    transform: rotate(0);
-    opacity: 0;
+@media (max-width: 768px) {
+  * {
+    box-sizing: border-box;
+    margin: 0;
   }
 
-  25% {
-    transform: rotate(360deg);
+  nav {
+    border-radius: 0 0 10px 10px;
+    background-color: rgba(0, 0, 0, 0.1);
+    position: sticky;
+    height: 10vh;
+    width: 100vw;
   }
 
-  50% {
-    transform: rotate(360deg);
-    opacity: .1;
+  nav ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
   }
 
-  75% {
-    transform: rotate(360deg);
-    opacity: .3;
+  nav ul li {
+    list-style-type: none;
+    margin-top: 25px;
+    width: 20%;
+    padding-left: 7.5%;
   }
 
-  95% {
-    opacity: .9;
+  nav ul li a img {
+    height: 20px;
+    transition: all 1s;
+    width: 20px;
   }
 
-  100% {
-    transform: rotate(360deg);
-    opacity: 1;
-  }
-}
-
-.rightDiv {
-  height: 80vh;
-  width: 75%;
-}
-
-.rightDiv img {
-  animation: start 3s;
-  border-radius: 35%;
-  height: 75vh;
-  margin-left: 25%;
-  opacity: 1;
-  transition: all 1s;
-}
-
-.rightDiv img:hover {
-  transform: scale(1.1);
-}
-
-@keyframes start {
-  from {
-    transform: translateX(-1050px);
-    opacity: 0;
+  #mainContent {
+    height: 90vh;
+    width: 100vw;
   }
 
-  to {
-    transform: translateX(0px);
-    opacity: 1;
+  .topDiv {
+    animation-name: nameTitle;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    height: 12.5vh;
+  }
+
+  @keyframes nameTitle {
+    0% {
+      opacity: 0;
+      transform: scale(0.1);
+    }
+    50% {
+      opacity: .5;
+      transform: scale(1.25);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  .topDiv h2 {
+    font-family: 'Lobster';
+    font-size: 75px;
+    text-align: center;
+    width: 100vw;
+  }
+
+  .centralContent {
+    display: flex;
+    height: 65vh;
+    flex-wrap: nowrap;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+  }
+
+  .leftDiv {
+    width: 100vw;
+    z-index: 2;
+  }
+
+  .leftDiv h3 {
+    animation-name: hide;
+    animation-duration: 4s;
+    font-family: 'Lobster', cursive;
+    font-size: 30px;
+    text-align: left;
+  }
+
+  .leftDiv p {
+    animation-name: hide;
+    animation-duration: 4s;
+    font-family: 'Lobster Two', cursive;
+    font-size: 12px;
+    text-align: left;
+  }
+
+  @keyframes hide {
+    0% {
+      transform: rotate(0);
+      opacity: 0;
+    }
+
+    25% {
+      transform: rotate(360deg);
+    }
+
+    50% {
+      transform: rotate(360deg);
+      opacity: .1;
+    }
+
+    75% {
+      transform: rotate(360deg);
+      opacity: .3;
+    }
+
+    95% {
+      opacity: .9;
+    }
+
+    100% {
+      transform: rotate(360deg);
+      opacity: 1;
+    }
+  }
+
+  .rightDiv {
+    height: 60vh;
+    width: 100vw;
+    z-index: 1;
+  }
+
+  .rightDiv img {
+    animation: start 3s;
+    border-radius: 35%;
+    height: 67vh;
+    margin-left: 25%;
+    opacity: 0.5;
+    transition: all 1s;
+  }
+
+  @keyframes start {
+    from {
+      transform: translateX(-1050px);
+      opacity: 0;
+    }
+
+    to {
+      transform: translateX(0px);
+      opacity: 0.5;
+    }
   }
 }
