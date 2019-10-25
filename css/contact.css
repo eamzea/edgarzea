@@ -39,10 +39,17 @@ nav ul li a img:hover {
 }
 
 .topDiv {
+  height: 20vh;
+}
+
+.topDiv h2 {
   animation-name: nameTitle;
   animation-duration: 2s;
   animation-timing-function: linear;
-  height: 20vh;
+  font-family: 'Lobster';
+  font-size: 75px;
+  margin-right: 10%;
+  text-align: center;
 }
 
 @keyframes nameTitle {
@@ -58,13 +65,6 @@ nav ul li a img:hover {
     opacity: 1;
     transform: scale(1);
   }
-}
-
-.topDiv h2 {
-  font-family: 'Lobster';
-  font-size: 75px;
-  margin-right: 10%;
-  text-align: center;
 }
 
 .centralContent {
@@ -117,7 +117,9 @@ form {
 }
 
 button {
-  border-radius: 25px;
+  background-color: rgba(0,0,0,0.1);
+  border: none;
+  border-radius: 10px;
   font-family: 'Comfortaa', cursive;
   font-size: 1.5vw;
   font-weight: 200;
@@ -125,5 +127,11 @@ button {
   letter-spacing: 3px;
   margin-left: 15%;
   margin-top: 4%;
-  width: 25%;
+  padding: 0 5%;
+  transition: all 2s;
+  width: 50%;
+}
+
+button:hover {
+  transform: scale(1.2);
 }

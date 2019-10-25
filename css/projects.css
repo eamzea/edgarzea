@@ -44,7 +44,7 @@ nav ul li a img:hover {
 }
 
 .topDiv {
-  height: 20vh;
+  height: 15vh;
   margin: 0;
   padding: 0;
 }
@@ -53,6 +53,85 @@ nav ul li a img:hover {
   font-family: 'Lobster';
   font-size: 75px;
   margin-right: 10%;
-  margin-top: 2.5%;
+  margin-top: 1.5%;
   text-align: center;
+}
+
+.projects-boxes {
+  animation: probox 2s;
+  height: 70vh;
+  width: 80vw;
+}
+
+@keyframes probox {
+  from {
+    transform: translateX(-1250px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+.projects-boxes h3 {
+  margin: 0;
+}
+
+.ironhack-projects, .personal-projects {
+  font-family: 'Lobster';
+  font-size: 32px;
+  height: 35vh;
+}
+
+.boxes-examples {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.boxes-previews {
+  border: 1px solid rgba(0, 0, 0, .3);
+  border-radius: 25px;
+  box-shadow: 2px 2px 10px #000;
+  margin: 5px 5px;
+  height: 28vh;
+  width: 30%;
+}
+
+.boxes-previews h4 {
+  font-size: 16px;
+  padding: 2px;
+  text-align: center;
+}
+
+.boxes-previews img {
+  margin: 0 20%;
+  height: 60%;
+  transition: all 3s;
+  width: 60%;
+}
+
+.boxes-previews img:hover {
+  transform: scale(2.2);
+  opacity: .7;
+}
+
+.boxes-previews a {
+  margin: 0 25%;
+  padding: 0;
+}
+
+.boxes-previews a button {
+  background-color: rgba(0,0,0,0.1);
+  border: none;
+  border-radius: 10px;
+  padding: 2.5% 20%;
+  text-decoration: none;
+  transition: all 1s;
+}
+
+.boxes-previews a button:hover {
+  transform: scale(1.2);
 }

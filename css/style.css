@@ -39,11 +39,14 @@
     width: 90vw;
   }
 
-  .topDiv {
+  .topDiv h1 {
     animation-name: nameTitle;
     animation-duration: 2s;
     animation-timing-function: linear;
-    height: 20vh;
+    font-family: 'Lobster';
+    font-size: 75px;
+    margin-right: 10%;
+    text-align: center;
   }
 
   @keyframes nameTitle {
@@ -60,14 +63,6 @@
       transform: scale(1);
     }
   }
-
-  .topDiv h2 {
-    font-family: 'Lobster';
-    font-size: 75px;
-    margin-right: 10%;
-    text-align: center;
-  }
-
 
   .centralContent {
     display: flex;
