@@ -1,304 +1,235 @@
-* {
+/*@media (min-width: 765px) {*/
+  * {
     font-family: 'Lato', sans-serif;
-}
-
-@media (min-width: 1050px) {
-
-body {
     margin: 0;
-}
+  }
 
-.Boxes {
-    margin-top: 5%;
-    margin-bottom: 5%;
+  /*Menu styles*/
+
+  header {
+    height: 5vh;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+  }
+
+  .menu {
+    background-color: #fff;
+    height: 5vh;
+    margin: 0;
+    padding-top: 15px;
+    position: fixed;
+    width: 100vw;
+    z-index: 1;
+  }
+
+  .menu li {
+    color: rgba(12,141,148, 0.8);
+    display: inline;
+    font-size: 16px;
+    font-weight: 600;
+    list-style-type: none;
+    padding: 0 15px;
+    transition: all 1s;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  a:link {
+    color: rgba(12,141,148, 0.8);
+  }
+
+  a:visited {
+    color: rgba(12,141,148, 0.1);
+  }
+
+  .home-logo {
+    height: 90vh;
+    width: 100vw;
+  }
+
+  /*Main Image*/
+
+  #home-img {
+    height: 80vh;
+    margin: 5% 5%;
+    width: 90vw;
+  }
+
+  #home-img img {
+    animation: start-img 2s, click-img 2s infinite 2s;
+    height: 600px;
+    margin: 0 25%;
+    width: 550px;
+  }
+
+  @keyframes start-img {
+    0% {
+      transform: scale(2);
+      opacity: 0;
     }
 
-a {
-    text-decoration: none;
-    font-weight: bold;
-}
+    50% {
+      opacity: .5;
+    }
 
-a:visited {
-    color: #097B84;
-}
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
 
-a:link {
-    color: #097B84;
-}
+  @keyframes click-img {
+    0% {
+      transform: scale(1);
+    }
+    10% {
+      transform: scale(.99);
+    }
+    90% {
+      transform: scale(1);
+    }
+    100%{
+      transform: scale(1);
+    }
+  }
 
-ul a {
-  transition: all 2s;
-}
+  .Boxes {
+    margin: 50px 0;
+  }
 
-ul a:hover {
-    background-color: #F8F8F8;
-    font-size: 17px;
-}
+  h3 {
+    font-size: 32px;
+  }
 
-ul {
-    list-style-type: none;
-    display: block;
-    position: absolute;
-    top: 0;
-    width: 90%;
-}
+  #AboutUsPyImg {
+    display: flex;
+    flex-wrap: nowrap;
+    height: 70vh;
+    justify-content: space-around;
+    align-items: center;
+  }
 
-li {
+  #Us, #logoRight {
+    width: 40%;
+  }
+
+  #Us p {
     display: inline;
-    float: left;
-    text-align: center;
-    border-right: 1px solid #111;
-}
+    font-size: 24px;
+    font-weight: 300;
+    text-align: justify;
+  }
 
-li a {
-    display: block;
-    padding: 10px;
-}
-
-.HPage {
-    display: block;
-}
-
-#NavLogo {
-    display: block;
+  #logoRight img {
     width: 100%;
-    height: 100%;
-}
+  }
 
-#logo {
-    height: 47%;
-    width: 47%;
-    display: block;
-    margin-top: 8%;
-    margin-left: 25%;
-}
-
-.Boxes {
+  #services-boxes {
+    background-image: url(../images/shadeDK.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
     display: flex;
     flex-wrap: wrap;
-    height: 100%;
-}
+    height: 70vh;
+    justify-content: space-around;
+    align-items: center;
+  }
 
-#AboutUs {
-    margin: 20px;
-}
+  .box-serv {
+    width: 40%;
+  }
 
-#AboutUsPyImg {
+  h4 {
+    display: inline-block;
+    font-size: 28px;
+    font-weight: 700;
+    margin: 25px 0;
+    width: 100%;
+  }
+
+  .box-serv p {
+    display: inline;
+    font-size: 24px;
+    font-weight: 300;
+  }
+
+  .box-icon-img {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  .icons-img {
+    margin: 25px;
+    width: 10%;
+  }
+
+  .icons-img img {
+    width: 32px;
+  }
+
+  .sentences p {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 40px;
+    margin: 10px 25px;
+  }
+
+  .sentences span img {
+    width: 25px;
+  }
+
+  footer {
+    background-color: rgba(12,141,148, 0.8);
+    border-radius: 15px 15px 0 0;
+    display: flex;
+    justify-content: space-around;
     align-content: center;
     align-items: center;
-}
+    height: 15vh;
+  }
 
-h3 {
-    font-size: 32px;
-    margin: 0%;
-}
+  #address {
+    width: 20vw;
+  }
 
-#Us {
-    display: inline;
-    width: 50%;
-    flex-wrap: wrap;
-}
+  #address p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    margin: 0 25px;
+  }
 
-#Us p {
-    font-size: 20px;
-    text-align: justify;
-}
-
-#logoRight {
-    display: inline;
-    width: 50%;
-}
-
-#blue {
-    width: 65%;
-    height: 60%;
-    padding: 10%;
-}
-
-#Services {
-    margin: 20px;
-}
-
-#DyOPyI {
+  #social-media {
     display: flex;
-    flex-wrap: wrap;
-}
-
-#DesignOrtography {
-    width: 33%;
-}
-
-h4 {
-    font-size: 26px;
-}
-
-#DesignOrtography p {
-    text-align: justify;
-    font-size: 20px;
-}
-
-#iconsDyO {
-    width: 100%;
-    display: flex;
-}
-
-#iconsD {
-    width: 50%;
-}
-
-#Design {
-    height: 100px;
-    width: 100px;
-}
-
-#Ortography {
-    width: 50%;
-}
-
-#imgO {
-    height: 100px;
-    width: 100px;
-}
-
-#ShadeLogo {
-    width: 33%;
-}
-
-#shade {
-    height: 47.5%;
-    width: 45%;
-    padding: 25%;
-}
-
-#Digitalizacion {
-    width: 33%;
-}
-
-#Digitalizacion p {
-    font-size: 20px;
-    text-align: justify;
-}
-
-#DigitalT {
-    height: 50%;
-}
-
-#iconsDigital {
-    width: 100%;
-    display: flex;
-}
-
-#iconsScan {
-    width: 33%;
-    padding: 5%;
-}
-
-#scan {
-    height: 100%;
-    width: 100%;
-}
-
-#iconsMac {
-    width: 33%;
-    padding: 5%;
-}
-
-#Mac {
-    height: 100%;
-    width: 100%;
-}
-
-#iconsMobile {
-    width: 33%;
-    padding: 5%;
-}
-
-#Mobile {
-    height: 100%;
-    width: 100%;
-}
-
-#Advantages {
-  margin: 0 20px;
-}
-
-#Sentences p {
-    font-size: 20px;
-    line-height: 200%;
-}
-
-#AdvImg {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-#Sentences {
-  width: 50%;
-}
-
-#CornerShadeLogo {
-  width: 50%;
-}
-
-#CornerShade {
-  padding-left: 15%;
-  width: 75%;
-}
-
-#footer {
-    background-color: #575756;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-#Info {
-    display: flex;
-    width: 25%;
-}
-
-#Info p {
-    margin: 10%;
-    font-weight: 600;
-}
-
-#SocialMedia {
-    width: 70%;
-    margin: 0%;
-    display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
-}
+    width: 70vw;
+  }
 
-#footer img {
-    height: 20%;
+  #social-media .channels {
     width: 20%;
+  }
+
+  .channels a {
+    color: rgba(255,255,255, 0.7);
+  }
+
+  .channels a img {
+    width: 32px;
+  }
+
+
+/*
 }
 
-#FB {
-    width: 20%;
-    text-align: center;
-}
 
-#Lkdn {
-    width: 20%;
-    text-align: center;
-}
-
-#Insta {
-    width: 20%;
-    text-align: center;
-}
-
-#Email {
-    width: 25%;
-    text-align: center;
-}
-}
-
-@media (max-width: 570px) {
+/*
+@media (max-width: 820px) {
     body {
       margin: 0px;
   }
