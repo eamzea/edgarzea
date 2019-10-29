@@ -1,22 +1,23 @@
-@media (min-width: 1080px) {
+@media (min-width: 1270px) {
   * {
     box-sizing: border-box;
     font-family: 'Lato', sans-serif;
     margin: 0;
+    overflow-x: hidden;
   }
 
   /*Menu styles*/
 
   header {
-    height: 5vh;
+    height: 5%;
     margin: 0;
     width: 100%;
   }
 
   .menu {
     background-color: #fff;
-    height: 5vh;
-    padding-top: 15px;
+    height: 5%;
+    padding-top: 10px;
     position: fixed;
     width: 100%;
     z-index: 1;
@@ -45,8 +46,9 @@
   }
 
   .home-logo {
-    height: 90vh;
-    padding: 5% 0 0 0;
+    height: 80%;
+    margin: 0 auto;
+    padding-top: 5%;
     width: 100vw;
   }
 
@@ -54,9 +56,9 @@
 
   .home-logo img {
     animation: start-img 2s, click-img 2s infinite 2s;
-    height: 600px;
+    height: 55%;
     margin: 0 30%;
-    width: 550px;
+    width: 45%;
   }
 
   @keyframes start-img {
@@ -224,7 +226,7 @@
   }
 }
 
-@media (max-width:1080px) {
+@media (min-width: 601px) and (max-width: 1269px) {
   * {
     box-sizing: border-box;
     font-family: 'Lato', sans-serif;
@@ -236,7 +238,7 @@
   /*Menu styles*/
 
   header {
-    height: 5vh;
+    background-color: #fff;
     margin: 0;
     padding: 0;
     width: 100%;
@@ -244,11 +246,12 @@
 
   .menu {
     background-color: #fff;
-    height: 5vh;
+    height: 5%;
     margin: 0;
-    padding-top: 15px;
+    overflow: visible;
+    padding: 5px 0;
     position: fixed;
-    width: 90%;
+    width: 100%;
     z-index: 1;
   }
 
@@ -276,7 +279,7 @@
 
   .home-logo {
     height: 90%;
-    padding: 5% 0;
+    padding: 10% 0;
     width: 100vw;
   }
 
@@ -284,9 +287,9 @@
 
   .home-logo img {
     animation: start-img 2s, click-img 1s infinite 2s;
-    height: 600px;
-    margin: 0 25%;
-    width: 550px;
+    height: 55%;
+    margin: 0 30%;
+    width: 45%;
   }
 
   @keyframes start-img {
@@ -333,22 +336,21 @@
     padding: 0 2.5%;
   }
 
-  #AboutUsPyImg {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    align-items: center;
-  }
-
-  #Us, #logoRight {
-    width: 40%;
+  #Us {
+    margin: 0 auto;
+    padding: 0 5%;
+    width: 80%;
   }
 
   #Us p {
-    display: inline;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 300;
+    line-height: 30px;
     text-align: justify;
+  }
+
+  #logoRight {
+    display: none;
   }
 
   #logoRight img {
@@ -382,7 +384,7 @@
 
   .box-serv p {
     display: inline;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 300;
   }
 
@@ -420,7 +422,7 @@
     justify-content: space-around;
     align-content: center;
     align-items: center;
-    height: 15vh;
+    height: 100px;
     width: 100%;
   }
 
@@ -451,6 +453,241 @@
   }
 
   .channels a img {
+    width: 32px;
+  }
+}
+
+@media (max-width: 600px) {
+  * {
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  /*Menu styles*/
+
+  header {
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  .menu {
+    background-color: #fff;
+    height: 5%;
+    margin: 0;
+    overflow: visible;
+    padding: 5px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+  }
+
+  .menu li {
+    color: rgba(12,141,148, 0.8);
+    display: inline;
+    font-size: 16px;
+    font-weight: 600;
+    list-style-type: none;
+    padding: 0 15px;
+    transition: all 1s;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  a:link {
+    color: rgba(12,141,148, 0.8);
+  }
+
+  a:visited {
+    color: rgba(12,141,148, 0.1);
+  }
+
+  .home-logo {
+    height: 80%;
+    padding: 10% 0;
+    width: 100vw;
+  }
+
+  /*Main Image*/
+
+  .home-logo img {
+    animation: start-img 2s, click-img 1s infinite 2s;
+    height: 75%;
+    margin: 0 15%;
+    width: 65%;
+  }
+
+  @keyframes start-img {
+    0% {
+      transform: scale(2);
+      opacity: 0;
+    }
+
+    50% {
+      opacity: .5;
+    }
+
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+
+  @keyframes click-img {
+    0% {
+      transform: scale(1);
+    }
+    10% {
+      transform: scale(.99);
+    }
+    90% {
+      transform: scale(1);
+    }
+    100%{
+      transform: scale(1);
+    }
+  }
+
+  /*Story*/
+
+  .Boxes {
+    height: 70%;
+    margin: 25px 0;
+  }
+
+  h3 {
+    font-size: 28px;
+    margin: 2.5% 0;
+    padding: 0 2.5%;
+  }
+
+  #Us {
+    margin: 0 auto;
+    padding: 0 5%;
+    width: 80%;
+  }
+
+  #Us p {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 30px;
+    text-align: justify;
+  }
+
+  #logoRight {
+    display: none;
+  }
+
+  #logoRight img {
+    width: 100%;
+  }
+
+  /*Services*/
+
+  #services-boxes {
+    background-image: url(../images/shadeDK.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .box-serv {
+    width: 90%;
+  }
+
+  h4 {
+    display: inline-block;
+    font-size: 24px;
+    font-weight: 700;
+    margin: 25px 0;
+    width: 100%;
+  }
+
+  .box-serv p {
+    display: inline;
+    font-size: 18px;
+    font-weight: 300;
+  }
+
+  .box-icon-img {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  .icons-img {
+    margin: 25px;
+    width: 10%;
+  }
+
+  .icons-img img {
+    width: 32px;
+  }
+
+  .sentences p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 30px;
+    margin: 10px 0;
+    padding: 0 5%;
+  }
+
+  .sentences span img {
+    width: 20px;
+  }
+
+  footer {
+    background-color: rgba(12,141,148, 0.8);
+    border-radius: 15px 15px 0 0;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+  }
+
+  #address {
+    width: 20%;
+  }
+
+  #address p {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    margin: 0 15px;
+  }
+
+  #social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+  }
+
+  #social-media .channels {
+    height: 90px;
+    width: 20%;
+  }
+
+  .channels a {
+    color: rgba(255,255,255, 0.7);
+    font-size: 16px;
+  }
+
+  .channels a img {
+    margin: 10% 25%;
     width: 32px;
   }
 }
