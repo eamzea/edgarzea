@@ -1,137 +1,266 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-}
-
-body {
-  display: flex;
-  flex-wrap: nowrap;
-}
-
-nav {
-  height: 100vh;
-  width: 10vw;
-}
-
-nav ul {
-  padding-top: 30vh;
-}
-
-nav ul li {
-  list-style-type: none;
-  margin: 25% 35%;
-}
-
-nav ul li a img {
-  height: 30px;
-  transition: all 1s;
-  width: 30px;
-}
-
-nav ul li a img:hover {
-  transform: scale(2.5) rotate(360deg);
-}
-
-#mainContent {
-  height: 100vh;
-  padding-left: 5%;
-  width: 90vw;
-}
-
-.topDiv {
-  height: 20vh;
-}
-
-.topDiv h2 {
-  animation-name: nameTitle;
-  animation-duration: 2s;
-  animation-timing-function: linear;
-  font-family: 'Lobster';
-  font-size: 75px;
-  margin-right: 10%;
-  text-align: center;
-}
-
-@keyframes nameTitle {
-  0% {
-    opacity: 0;
-    transform: scale(0.1);
+@media (max-width: 769px) {
+  * {
+    box-sizing: border-box;
+    margin: 0;
   }
-  50% {
-    opacity: .5;
-    transform: scale(1.25);
+
+  nav {
+    border-radius: 0 0 10px 10px;
+    background-color: rgba(0, 0, 0, 0.1);
+    position: sticky;
+    height: 10vh;
+    width: 100vw;
   }
-  100% {
-    opacity: 1;
-    transform: scale(1);
+
+  nav ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  nav ul li {
+    list-style-type: none;
+    margin-top: 25px;
+    width: 20%;
+    padding-left: 7.5%;
+  }
+
+  nav ul li a img {
+    height: 20px;
+    transition: all 1s;
+    width: 20px;
+  }
+
+  #mainContent {
+    height: 90vh;
+  }
+
+  #mainContent p {
+    font-family: 'Lobster Two', cursive;
+    font-size: 12px;
+    margin: 2.5px 0;
+  }
+
+  .topDiv {
+    animation-name: nameTitle;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    height: 10vh;
+  }
+
+  @keyframes nameTitle {
+    0% {
+      opacity: 0;
+      transform: scale(0.1);
+    }
+    50% {
+      opacity: .5;
+      transform: scale(1.25);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  .topDiv h2 {
+    font-family: 'Lobster';
+    font-size: 55px;
+    text-align: center;
+    width: 100vw;
+  }
+
+  .networks {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+  }
+
+  .social-logo a img {
+    width: 24px;
+  }
+
+  .forms {
+    width: 100%;
+  }
+
+  form {
+    font-family: 'Comfortaa', cursive;
+    margin: 5% 0;
+    padding: 0 5%;
+  }
+
+  .forms input {
+    border: black 1px solid;
+    border-radius: 15px;
+    display: block;
+    font-family: 'Comfortaa', cursive;
+    height: 5vh;
+    margin: 1.5% 0;
+    padding-left: 2.5%;
+    width: 75%;
+  }
+
+  ::placeholder {
+    margin-left: 5%;
+  }
+
+  button {
+    background-color: rgba(0,0,0,0.1);
+    border: none;
+    border-radius: 10px;
+    font-family: 'Comfortaa', cursive;
+    font-size: 1.7vw;
+    font-weight: 200;
+    height: 40px;
+    letter-spacing: 3px;
+    margin-left: 15%;
+    margin-top: 4%;
+    padding: 0 5%;
+    width: 50%;
   }
 }
 
-.centralContent {
-  display: flex;
-  height: 80vh;
-  flex-wrap: nowrap;
-}
+@media (min-width: 769px) {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+  }
 
-.networks {
-  width: 25%;
-}
+  body {
+    display: flex;
+    flex-wrap: nowrap;
+  }
 
-.networks div {
-  height: 16.5%;
-}
+  nav {
+    height: 100vh;
+    width: 10vw;
+  }
 
-.networks img {
-  display: block;
-  margin-left: 50%;
-  transition: all 1s;
-  width: 2.5vw;
-}
+  nav ul {
+    padding-top: 30vh;
+  }
 
-.networks img:hover {
-  transform: scale(1.5);
-}
+  nav ul li {
+    list-style-type: none;
+    margin: 25% 35%;
+  }
 
-.forms {
-  width: 100%;
-}
+  nav ul li a img {
+    height: 30px;
+    transition: all 1s;
+    width: 30px;
+  }
 
-form {
-  font-family: 'Comfortaa', cursive;
-  margin-left: 25%;
-}
+  nav ul li a img:hover {
+    transform: scale(2.5) rotate(360deg);
+  }
 
-.forms input {
-  border: black 1px solid;
-  border-radius: 15px;
-  display: block;
-  font-family: 'Comfortaa', cursive;
-  height: 5vh;
-  margin: 1.5% 0;
-  padding-left: 2.5%;
-  width: 25%;
-}
+  #mainContent {
+    height: 100vh;
+    padding-left: 5%;
+    width: 90vw;
+  }
 
-::placeholder {
-  margin-left: 5%;
-}
+  .topDiv {
+    height: 20vh;
+  }
 
-button {
-  background-color: rgba(0,0,0,0.1);
-  border: none;
-  border-radius: 10px;
-  font-family: 'Comfortaa', cursive;
-  font-size: 1.5vw;
-  font-weight: 200;
-  height: 40px;
-  letter-spacing: 3px;
-  margin-left: 15%;
-  margin-top: 4%;
-  padding: 0 5%;
-  transition: all 2s;
-  width: 50%;
-}
+  .topDiv h2 {
+    animation-name: nameTitle;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    font-family: 'Lobster';
+    font-size: 75px;
+    margin-right: 10%;
+    text-align: center;
+  }
 
-button:hover {
-  transform: scale(1.2);
+  @keyframes nameTitle {
+    0% {
+      opacity: 0;
+      transform: scale(0.1);
+    }
+    50% {
+      opacity: .5;
+      transform: scale(1.25);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  .centralContent {
+    display: flex;
+    height: 80vh;
+    flex-wrap: nowrap;
+  }
+
+  .networks {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    width: 25%;
+  }
+
+  .networks div {
+    height: 15%;
+  }
+
+  .networks img {
+    transition: all 1s;
+    width: 2.5vw;
+  }
+
+  .networks img:hover {
+    transform: scale(1.5);
+  }
+
+  .forms {
+    width: 100%;
+  }
+
+  form {
+    font-family: 'Comfortaa', cursive;
+    margin-left: 25%;
+  }
+
+  .forms input {
+    border: black 1px solid;
+    border-radius: 15px;
+    display: block;
+    font-family: 'Comfortaa', cursive;
+    height: 5vh;
+    margin: 1.5% 0;
+    padding-left: 2.5%;
+    width: 25%;
+  }
+
+  ::placeholder {
+    margin-left: 5%;
+  }
+
+  button {
+    background-color: rgba(0,0,0,0.1);
+    border: none;
+    border-radius: 10px;
+    font-family: 'Comfortaa', cursive;
+    font-size: 1.5vw;
+    font-weight: 200;
+    height: 40px;
+    letter-spacing: 3px;
+    margin-left: 15%;
+    margin-top: 4%;
+    padding: 0 5%;
+    transition: all 2s;
+    width: 50%;
+  }
+
+  button:hover {
+    transform: scale(1.2);
+  }
 }

@@ -213,11 +213,14 @@
     }
   }
 
-  .topDiv h2 {
+  .topDiv h1 {
+    animation-name: nameTitle;
+    animation-duration: 2s;
+    animation-timing-function: linear;
     font-family: 'Lobster';
     font-size: 75px;
+    margin-right: 10%;
     text-align: center;
-    width: 100vw;
   }
 
   .centralContent {
