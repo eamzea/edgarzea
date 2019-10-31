@@ -40,8 +40,8 @@
   }
 
   #mainContent p {
-    font-family: 'Lobster Two', cursive;
-    font-size: 20px;
+    font-family: 'Comfortaa', cursive;
+    font-size: 18px;
   }
 
   .topDiv {
@@ -51,7 +51,7 @@
   }
 
   .topDiv h2 {
-    font-family: 'Lobster';
+    font-family: 'Lobster Two', cursive;
     font-size: 75px;
     margin-right: 10%;
     margin-top: 2.5%;
@@ -63,6 +63,7 @@
     animation-duration: 2s;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
   }
 
   @keyframes dataDev {
@@ -91,34 +92,40 @@
     border: 1px solid rgba(0, 0, 0, .3);
     border-radius: 25px;
     box-shadow: 2px 2px 10px #000;
-    height: 65vh;
-    margin: 0 2.5%;
-    padding: 2.5% 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: space-around;
+    height: 70vh;
     text-align: center;
     width: 27.5%;
   }
 
-  .itJobs h3 {
-    font-size: 50px;
-    font-family: 'Lobster';
-    text-align: center;
+  .itJobs > * {
+    margin: 5px 0;
   }
 
   .itJobs h6 {
-    font-family: 'Lobster';
+    font-family: 'Lobster Two', cursive;
     font-size: 30px;
   }
 
   .itJobs a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-decoration: none;
+    width: 90%;
   }
 
   .itJobs a button {
-    border-radius: 5%;
-    display: block;
+    background-color: rgba(0,0,0,0.1);
+    border: none;
+    border-radius: 10px;
     font-family: 'Comfortaa', cursive;
     font-size: 700;
-    padding: 2.5%;
+    margin: 25px 0;
+    padding: 2.5% 20%;
   }
 
   #promasa img {
@@ -143,11 +150,6 @@
   }
 
   #promasa a button {
-    background-color: rgba(0,0,0,0.1);
-    border: none;
-    border-radius: 10px;
-    margin: 18% 0 0 25%;
-    padding: 2.5% 20%;
     transition: all 1s;
   }
 
@@ -156,11 +158,6 @@
   }
 
   #maikai a button {
-    background-color: rgba(0,0,0,0.1);
-    border: none;
-    border-radius: 10px;
-    margin: 10% 0 0 25%;
-    padding: 2.5% 20%;
     transition: all 1s;
   }
 
@@ -169,11 +166,6 @@
   }
 
   #digitalKey a button {
-    background-color: rgba(0,0,0,0.1);
-    border: none;
-    border-radius: 10px;
-    margin: 19% 0 0 25%;
-    padding: 2.5% 20%;
     transition: all 1s;
   }
 
@@ -221,7 +213,7 @@
   }
 
   #mainContent p {
-    font-family: 'Lobster Two', cursive;
+    font-family: 'Comfortaa', cursive;
     font-size: 12px;
     margin: 2.5px 0;
   }
@@ -249,7 +241,7 @@
   }
 
   .topDiv h2 {
-    font-family: 'Lobster';
+    font-family: 'Lobster Two';
     font-size: 55px;
     text-align: center;
     width: 100vw;
@@ -301,52 +293,41 @@
   }
 
   .itJobs h6 {
-    font-family: 'Lobster';
+    font-family: 'Lobster Two';
     font-size: 24px;
     margin: 10px 0 5px 0;
   }
 
   .itJobs a {
+    display: flex;
+    justify-content: center;
+    margin: 25px 0;
     text-decoration: none;
+    width: 90%;
   }
 
   .itJobs a button {
-    border-radius: 25px;
-    display: block;
+    background-color: rgba(0,0,0,0.1);
+    border: none;
+    border-radius: 10px;
     font-family: 'Comfortaa', cursive;
-    font-size: 8px;
+    font-weight: 900;
+    padding: 2.5% 20%;
+    text-decoration: none;
   }
 
   #promasa img {
-    display: block;
     margin: 5px auto;
     width: 35vw;
   }
 
   #maikai img {
-    display: block;
     height: 12.5vh;
     margin: 5px auto;
   }
 
   #digitalKey img {
-    display: block;
     margin: 10px auto;
     width: 35vw;
-  }
-
-  #promasa a button {
-    margin: 15px auto;
-    transition: all 1s;
-  }
-
-  #maikai a button {
-    margin: 5px auto;
-    transition: all 1s;
-  }
-
-  #digitalKey a button {
-    margin: 15px auto;
-    transition: all 1s;
   }
 }

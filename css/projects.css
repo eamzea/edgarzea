@@ -1,137 +1,267 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-}
-
-body {
-  display: flex;
-  flex-wrap: nowrap;
-}
-
-nav {
-  height: 100vh;
-  width: 10vw;
-}
-
-nav ul {
-  padding-top: 30vh;
-}
-
-nav ul li {
-  list-style-type: none;
-  margin: 25% 35%;
-}
-
-nav ul li a img {
-  height: 30px;
-  transition: all 1s;
-  width: 30px;
-}
-
-nav ul li a img:hover {
-  transform: scale(2.5) rotate(360deg);
-}
-
-#mainContent {
-  height: 100vh;
-  padding-left: 5%;
-  width: 90vw;
-}
-
-#mainContent p {
-  font-family: 'Lobster Two', cursive;
-  font-size: 20px;
-}
-
-.topDiv {
-  height: 15vh;
-  margin: 0;
-  padding: 0;
-}
-
-.topDiv h2 {
-  font-family: 'Lobster';
-  font-size: 75px;
-  margin-right: 10%;
-  margin-top: 1.5%;
-  text-align: center;
-}
-
-.projects-boxes {
-  animation: probox 2s;
-  height: 70vh;
-  width: 80vw;
-}
-
-@keyframes probox {
-  from {
-    transform: translateX(-1250px);
-    opacity: 0;
+@media (min-width: 769px) {
+  * {
+    box-sizing: border-box;
+    margin: 0;
   }
 
-  to {
-    transform: translateX(0px);
-    opacity: 1;
+  body {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  nav {
+    height: 100vh;
+    width: 10vw;
+  }
+
+  nav ul {
+    padding-top: 30vh;
+  }
+
+  nav ul li {
+    list-style-type: none;
+    margin: 25% 35%;
+  }
+
+  nav ul li a img {
+    height: 30px;
+    transition: all 1s;
+    width: 30px;
+  }
+
+  nav ul li a img:hover {
+    transform: scale(2.5) rotate(360deg);
+  }
+
+  #mainContent {
+    height: 100vh;
+    padding-left: 5%;
+    width: 90vw;
+  }
+
+  #mainContent p {
+    font-family: 'Lobster Two', cursive;
+    font-size: 20px;
+  }
+
+  .topDiv {
+    height: 15vh;
+    margin: 0;
+    padding: 0;
+  }
+
+  .topDiv h2 {
+    font-family: 'Lobster Two', cursive;
+    font-size: 75px;
+    margin-right: 10%;
+    margin-top: 1.5%;
+    text-align: center;
+  }
+
+  .projects-boxes {
+    animation: probox 2s;
+    height: 70vh;
+    width: 80vw;
+  }
+
+  @keyframes probox {
+    from {
+      transform: translateX(-1250px);
+      opacity: 0;
+    }
+
+    to {
+      transform: translateX(0px);
+      opacity: 1;
+    }
+  }
+
+  .projects-boxes h3 {
+    margin: 0;
+  }
+
+  .ironhack-projects, .personal-projects {
+    font-family: 'Lobster Two', cursive;
+    font-size: 32px;
+    height: 35vh;
+  }
+
+  .boxes-examples {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .boxes-previews {
+    border: 1px solid rgba(0, 0, 0, .3);
+    border-radius: 25px;
+    box-shadow: 2px 2px 10px #000;
+    margin: 5px 5px;
+    height: 28vh;
+    width: 30%;
+  }
+
+  .boxes-previews h4 {
+    font-family: 'Comfortaa', cursive;
+    font-weight: 400;
+    font-size: 16px;
+    padding: 2px;
+    text-align: center;
+  }
+
+  .boxes-previews img {
+    margin: 0 20%;
+    height: 60%;
+    transition: all 3s;
+    width: 60%;
+  }
+
+  .boxes-previews img:hover {
+    transform: scale(2.2);
+    opacity: .7;
+  }
+
+  .boxes-previews a {
+    margin: 0 25%;
+    padding: 0;
+  }
+
+  .boxes-previews a button {
+    background-color: rgba(0,0,0,0.1);
+    border: none;
+    border-radius: 10px;
+    font-family: 'Comfortaa', cursive;
+    font-weight: 900;
+    padding: 2.5% 20%;
+    text-decoration: none;
+    transition: all 1s;
+  }
+
+  .boxes-previews a button:hover {
+    transform: scale(1.2);
   }
 }
 
-.projects-boxes h3 {
-  margin: 0;
-}
+@media (max-width: 768px) {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+  }
 
-.ironhack-projects, .personal-projects {
-  font-family: 'Lobster';
-  font-size: 32px;
-  height: 35vh;
-}
+  nav {
+    border-radius: 0 0 10px 10px;
+    background-color: rgba(0, 0, 0, 0.1);
+    position: sticky;
+    height: 10vh;
+    width: 100vw;
+  }
 
-.boxes-examples {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
+  nav ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
 
-.boxes-previews {
-  border: 1px solid rgba(0, 0, 0, .3);
-  border-radius: 25px;
-  box-shadow: 2px 2px 10px #000;
-  margin: 5px 5px;
-  height: 28vh;
-  width: 30%;
-}
+  nav ul li {
+    list-style-type: none;
+    margin-top: 25px;
+    width: 20%;
+    padding-left: 7.5%;
+  }
 
-.boxes-previews h4 {
-  font-size: 16px;
-  padding: 2px;
-  text-align: center;
-}
+  nav ul li a img {
+    height: 20px;
+    transition: all 1s;
+    width: 20px;
+  }
 
-.boxes-previews img {
-  margin: 0 20%;
-  height: 60%;
-  transition: all 3s;
-  width: 60%;
-}
+  #mainContent {
+    height: 90vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+  }
 
-.boxes-previews img:hover {
-  transform: scale(2.2);
-  opacity: .7;
-}
+  .topDiv {
+    animation-name: nameTitle;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    height: 12.5vh;
+  }
 
-.boxes-previews a {
-  margin: 0 25%;
-  padding: 0;
-}
+  @keyframes nameTitle {
+    0% {
+      opacity: 0;
+      transform: scale(0.1);
+    }
+    50% {
+      opacity: .5;
+      transform: scale(1.25);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
 
-.boxes-previews a button {
-  background-color: rgba(0,0,0,0.1);
-  border: none;
-  border-radius: 10px;
-  padding: 2.5% 20%;
-  text-decoration: none;
-  transition: all 1s;
-}
+  .topDiv h2 {
+    animation-name: nameTitle;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    font-family: 'Lobster Two', cursive;
+    font-size: 65px;
+    text-align: center;
+  }
 
-.boxes-previews a button:hover {
-  transform: scale(1.2);
+  .project-boxes, .ironhack-projects, .personal-projects, .boxes-examples, .boxes-previews {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: space-around;
+  }
+
+  .boxes-previews {
+    border: 1px solid rgba(0, 0, 0, .3);
+    border-radius: 25px;
+    box-shadow: 2px 2px 10px #000;
+    margin: 25px 0;
+    width: 90vw;
+  }
+
+  .ironhack-projects h3, .personal-projects h3 {
+    font-family: 'Lobster Two', cursive;
+    font-size: 35px;
+  }
+
+  .ironhack-projects h4, .personal-projects h4 {
+    font-family: 'Comfortaa', cursive;
+    font-size: 20px;
+    font-weight: 100;
+    margin: 10px 0;
+  }
+
+  .boxes-previews img {
+    width: 90%;
+  }
+
+  .boxes-previews a {
+    display: flex;
+    justify-content: center;
+    margin: 25px 0;
+    text-decoration: none;
+    width: 90%;
+  }
+
+  .boxes-previews a button {
+    background-color: rgba(0,0,0,0.1);
+    border: none;
+    border-radius: 10px;
+    font-family: 'Comfortaa', cursive;
+    font-weight: 900;
+    padding: 2.5% 20%;
+    text-decoration: none;
+  }
 }
