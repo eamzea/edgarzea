@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Edgar Zea</title>
+    <link rel="stylesheet" href="style-signature.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,500,700&display=swap" rel="stylesheet">
+    <style media="screen">
+    #principal-box {
+      background-color: rgba(230, 255, 255, .2);
+      border: 1px solid rgba(230, 255, 255, 1);
+      border-radius: 25px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 150px;
+      width: 550px;
+    }
+
+    .boxes {
+      margin: 10px;
+    }
+
+    #img-box {
+      width: 20%;
+    }
+
+    #img-box img {
+      border: 2px solid #CA2E55;
+      border-radius: 50px;
+      width: 95%;
+    }
+
+    #info-box {
+      display: flex;
+      justify-content: space-around;
+      width: 75%;
+    }
+
+    .info-split {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin: 5px;
+    }
+
+    .info-split p {
+      font-family: 'Quicksand', sans-serif;
+      font-size: 14px;
+      font-weight: 300;
+      margin: 1px 0;
+    }
+
+    #name {
+      font-weight: 700;
+    }
+
+    #title {
+      font-weight: 500;
+    }
+
+    #links-pages {
+      display: flex;
+      flex-direction: column;
+      align-content: space-around;
+    }
+
+    #links-pages a {
+      color: #0197F6;
+      display: flex;
+      align-content: space-around;
+      align-items: center;
+      margin: 2px 0;
+      text-decoration: none;
+    }
+
+    #links-pages a > * {
+      margin: 0 2px;
+    }
+
+    #links-pages a img {
+      width: 34px;
+    }
+    </style>
+  </head>
+  <body>
+    <div id="principal-box">
+      <div id="img-box" class="boxes">
+        <img src="img-signature.jpeg" alt="">
+      </div>
+      <div id="info-box" class="boxes">
+        <div class="info-split">
+          <p id="name">Edgar Zea</p>
+          <p id="title">Web Developer / Web Designer</p>
+          <p>cesszea@icloud.com</p>
+          <p>+52 55 3505 7614</p>
+          <p>Mexico City</p>
+        </div>
+        <div id="links-pages" class="info-split">
+          <a href="https://eamzea.github.io/edgarzea/index.html" target="_blank">
+            <img src="logo-signature.svg" alt="">
+            <span>Web site</span>
+          </a>
+          <a href="https://github.com/eamzea" target="_blank">
+            <img src="github-logo-img.png" alt="">
+            <span>GitHub</span>
+          </a>
+          <a href="https://codepen.io/eamzea" target="_blank">
+            <img src="codepen-logo-img.png" alt="">
+            <span>Codepen</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
