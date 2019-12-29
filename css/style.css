@@ -1,363 +1,146 @@
-@media (min-width: 769px) {
-  * {
-    box-sizing: border-box;
-    margin: 0;
+.container-fluid {
+  background-color: #20a39e;
+  height: 100vh;
+}
+
+.home {
+  height: 100vh;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  height: 75vh;
+  justify-content: space-around;
+  padding: 0;
+}
+
+ul li {
+  background-color: #edebd7;
+  border-radius: 50px;
+  list-style-type: none;
+  padding: 25px;
+}
+
+@keyframes ghost {
+  0% {
+    transform: translateX(-200px);
   }
 
-  body {
-    display: flex;
-    flex-wrap: nowrap;
-  }
-
-  nav {
-    height: 100vh;
-    width: 10vw;
-  }
-
-  nav ul {
-    padding-top: 30vh;
-  }
-
-  nav ul li {
-    list-style-type: none;
-    margin: 25% 35%;
-  }
-
-  nav ul li a img {
-    height: 30px;
-    transition: all 1s;
-    width: 30px;
-  }
-
-  nav ul li a img:hover {
-    transform: scale(2.5) rotate(360deg);
-  }
-
-  #mainContent {
-    height: 100vh;
-    padding-left: 5%;
-    width: 90vw;
-  }
-
-  .topDiv h1 {
-    animation-name: nameTitle;
-    animation-duration: 2s;
-    animation-timing-function: linear;
-    font-family: 'Lobster Two', cursive;
-    font-size: 75px;
-    margin-right: 10%;
-    text-align: center;
-  }
-
-  @keyframes nameTitle {
-    0% {
-      opacity: 0;
-      transform: scale(0.1);
-    }
-    50% {
-      opacity: .5;
-      transform: scale(1.25);
-    }
-    100% {
-      opacity: 1;
-      transform: scale(1);
-    }
-  }
-
-  .centralContent {
-    display: flex;
-    height: 80vh;
-    flex-wrap: nowrap;
-  }
-
-  .leftDiv {
-    display: flex;
-    flex-direction: column;
-    width: 25%;
-  }
-
-  .leftDiv h3 {
-    animation: ghost 4s;
-    font-family: 'Lobster Two', cursive;
-    font-size: 50px;
-    padding-top: 50%;
-    text-align: left;
-  }
-
-  .leftDiv p {
-    animation: ghost 4s;
-    font-family: 'Comfortaa', cursive;
-    font-size: 25px;
-    text-align: left;
-  }
-
-  @keyframes ghost {
-    0% {
-      transform: rotate(0);
-      opacity: 0;
-    }
-
-    25% {
-      transform: rotate(360deg);
-    }
-
-    50% {
-      transform: rotate(360deg);
-      opacity: .1;
-    }
-
-    75% {
-      transform: rotate(360deg);
-      opacity: .3;
-    }
-
-    95% {
-      opacity: .9;
-    }
-
-    100% {
-      transform: rotate(360deg);
-      opacity: 1;
-    }
-  }
-
-  .leftDiv h4 {
-    animation: ghost 4s;
-    font-family: 'Lobster Two', cursive;
-    font-size: 20px;
-    margin: 5% 0;
-    text-align: left;
-  }
-
-  .leftDiv a {
-    margin: 0 25%;
-    padding: 0;
-  }
-
-  .leftDiv a button {
-    animation: ghost 4s;
-    background-color: rgba(0,0,0,0.1);
-    border: none;
-    border-radius: 10px;
-    font-family: 'Comfortaa', cursive;
-    font-size: 700;
-    padding: 5% 20%;
-    text-decoration: none;
-    transition: all 1s;
-    width: 100%;
-  }
-
-  .leftDiv a button:hover {
-    transform: scale(1.2);
-  }
-
-  .rightDiv {
-    height: 80vh;
-    width: 75%;
-  }
-
-  .rightDiv img {
-    animation: start 3s;
-    border-radius: 35%;
-    height: 75vh;
-    margin-left: 25%;
-    opacity: 1;
-    transition: all 1s;
-  }
-
-  .rightDiv img:hover {
-    transform: scale(1.1);
-  }
-
-  @keyframes start {
-    from {
-      transform: translateX(-1050px);
-      opacity: 0;
-    }
-
-    to {
-      transform: translateX(0px);
-      opacity: 1;
-    }
+  100% {
+    transform: translateX(0);
   }
 }
 
-@media (max-width: 768px) {
-  * {
-    box-sizing: border-box;
-    margin: 0;
+ul li a img {
+  transition: all 1s;
+}
+
+ul li a img:hover {
+  transform: scale(2.1) rotate(360deg);
+}
+
+.title {
+  animation: bigger 2s;
+  color: #edebd7;
+  font-family: "Courier Prime", monospace;
+  font-size: 150px;
+  text-shadow: -28px 28px 3px rgba(237, 235, 215, 0.25);
+}
+
+@keyframes bigger {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.5);
+    opacity: 0.75;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.corner-box {
+  background-color: #fff;
+  border-radius: 25px;
+}
+
+h3,
+p,
+a,
+button,
+h4 {
+  font-family: "Comfortaa", cursive;
+  color: #000022;
+}
+
+.h-fifty {
+  height: 50vh;
+}
+
+.img-fluid {
+  animation: profile 3s;
+}
+
+@keyframes profile {
+  0% {
+    transform: scale(2);
+    opacity: 0;
   }
 
-  nav {
-    border-radius: 0 0 10px 10px;
-    background-color: rgba(0, 0, 0, 0.1);
-    position: sticky;
-    height: 10vh;
-    width: 100vw;
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@media (min-width: 768px) {
+  ul li:nth-child(1) {
+    animation: ghost 1s;
   }
 
-  nav ul {
-    padding: 0;
-    margin: 0;
+  ul li:nth-child(2) {
+    animation: ghost 1.3s;
+  }
+
+  ul li:nth-child(3) {
+    animation: ghost 1.6s;
+  }
+
+  ul li:nth-child(4) {
+    animation: ghost 1.9s;
+  }
+
+  ul li:nth-child(5) {
+    animation: ghost 2.2s;
+  }
+}
+
+@media (max-width: 767px) {
+  ul {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    height: auto;
+    width: 100%;
   }
 
-  nav ul li {
-    list-style-type: none;
-    margin-top: 25px;
-    width: 20%;
-    padding-left: 7.5%;
+  ul li {
+    margin: 10px 0;
+    padding: 25px;
   }
 
-  nav ul li a img {
-    height: 20px;
-    transition: all 1s;
-    width: 20px;
-  }
-
-  #mainContent {
-    height: 90vh;
-    width: 100vw;
-  }
-
-  .topDiv {
-    animation-name: nameTitle;
-    animation-duration: 2s;
-    animation-timing-function: linear;
-    height: 12.5vh;
-  }
-
-  @keyframes nameTitle {
-    0% {
-      opacity: 0;
-      transform: scale(0.1);
-    }
-    50% {
-      opacity: .5;
-      transform: scale(1.25);
-    }
-    100% {
-      opacity: 1;
-      transform: scale(1);
-    }
-  }
-
-  .topDiv h1 {
-    animation-name: nameTitle;
-    animation-duration: 2s;
-    animation-timing-function: linear;
-    font-family: 'Lobster Two', cursive;
+  .title {
     font-size: 75px;
-    margin-right: 10%;
-    text-align: center;
   }
 
-  .centralContent {
-    display: flex;
-    height: 65vh;
-    flex-wrap: nowrap;
-    flex-direction: row-reverse;
-    align-items: flex-end;
+  .subtitle {
+    font-size: 18px;
   }
 
-  .leftDiv {
-    width: 100vw;
-    z-index: 2;
-  }
-
-  .leftDiv h3 {
-    animation: ghost 4s;
-    font-family: 'Lobster Two', cursive;
-    font-size: 30px;
-    text-align: left;
-  }
-
-  .leftDiv p {
-    animation: ghost 4s;
-    font-family: 'Comfortaa', cursive;
+  .text {
     font-size: 12px;
-    text-align: left;
-  }
-
-  @keyframes ghost {
-    0% {
-      transform: rotate(0);
-      opacity: 0;
-    }
-
-    25% {
-      transform: rotate(360deg);
-    }
-
-    50% {
-      transform: rotate(360deg);
-      opacity: .1;
-    }
-
-    75% {
-      transform: rotate(360deg);
-      opacity: .3;
-    }
-
-    95% {
-      opacity: .9;
-    }
-
-    100% {
-      transform: rotate(360deg);
-      opacity: 1;
-    }
-  }
-
-  .leftDiv h4 {
-    animation: ghost 4s;
-    font-family: 'Lobster Two', cursive;
-    font-size: 20px;
-    margin: 5% 0;
-    text-align: left;
-  }
-
-  .leftDiv a {
-    margin: 0;
-    padding: 0;
-  }
-
-  .leftDiv a button {
-    animation: ghost 4s;
-    background-color: rgba(0,0,0,0.1);
-    border: none;
-    border-radius: 10px;
-    font-family: 'Comfortaa', cursive;
-    font-size: 700;
-    padding: 2.5% 20%;
-    text-decoration: none;
-  }
-
-  .rightDiv {
-    height: 60vh;
-    width: 100vw;
-    z-index: 1;
-  }
-
-  .rightDiv img {
-    animation: start 3s;
-    border-radius: 35%;
-    height: 67vh;
-    margin-left: 25%;
-    opacity: 0.5;
-    transition: all 1s;
-  }
-
-  @keyframes start {
-    from {
-      transform: translateX(-1050px);
-      opacity: 0;
-    }
-
-    to {
-      transform: translateX(0px);
-      opacity: 0.5;
-    }
   }
 }

@@ -1,333 +1,169 @@
-@media (min-width: 769px) {
-  * {
-  box-sizing: border-box;
-  margin: 0;
+.container-fluid {
+  background-color: #20a39e;
+  height: 100vh;
+}
+
+.home {
+  height: 100vh;
+}
+
+.nav-ul {
+  display: flex;
+  flex-direction: column;
+  height: 75vh;
+  justify-content: space-around;
+  padding: 0;
+}
+
+.nav-ul li {
+  background-color: #edebd7;
+  border-radius: 50px;
+  list-style-type: none;
+  padding: 25px;
+}
+
+@keyframes ghost {
+  0% {
+    transform: translateX(-200px);
   }
 
-  body {
-    display: flex;
-    flex-wrap: nowrap;
-  }
-
-  nav {
-    height: 100vh;
-    width: 10vw;
-  }
-
-  nav ul {
-    padding-top: 30vh;
-  }
-
-  nav ul li {
-    list-style-type: none;
-    margin: 25% 35%;
-  }
-
-  nav ul li a img {
-    height: 30px;
-    transition: all 1s;
-    width: 30px;
-  }
-
-  nav ul li a img:hover {
-    transform: scale(2.5) rotate(360deg);
-  }
-
-  #mainContent {
-    height: 100vh;
-    padding-left: 5%;
-    width: 90vw;
-  }
-
-  #mainContent p {
-    font-family: 'Comfortaa', cursive;
-    font-size: 18px;
-  }
-
-  .topDiv {
-    height: 20vh;
-    margin: 0;
-    padding: 0;
-  }
-
-  .topDiv h2 {
-    font-family: 'Lobster Two', cursive;
-    font-size: 75px;
-    margin-right: 10%;
-    margin-top: 2.5%;
-    text-align: center;
-  }
-
-  .devData {
-    animation: dataDev;
-    animation-duration: 2s;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-
-  @keyframes dataDev {
-    0% {
-      transform: translateX(-750px);
-      opacity: 0;
-    }
-
-    75% {
-      transform: translateX(0px);
-      opacity: .5;
-    }
-
-    90% {
-      transform: translateX(0px);
-      opacity: .9;
-    }
-
-    100% {
-      transform: translateX(0px);
-      opacity: 1;
-    }
-  }
-
-  .itJobs {
-    border: 1px solid rgba(0, 0, 0, .3);
-    border-radius: 25px;
-    box-shadow: 2px 2px 10px #000;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: space-around;
-    height: 70vh;
-    text-align: center;
-    width: 27.5%;
-  }
-
-  .itJobs > * {
-    margin: 5px 0;
-  }
-
-  .itJobs h6 {
-    font-family: 'Lobster Two', cursive;
-    font-size: 30px;
-  }
-
-  .itJobs a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    width: 90%;
-  }
-
-  .itJobs a button {
-    background-color: rgba(0,0,0,0.1);
-    border: none;
-    border-radius: 10px;
-    font-family: 'Comfortaa', cursive;
-    font-size: 700;
-    margin: 25px 0;
-    padding: 2.5% 20%;
-  }
-
-  #promasa img {
-    display: block;
-    margin: 0 20%;
-    padding-top: 15%;
-    width: 15vw;
-  }
-
-  #maikai img {
-    display: block;
-    height: 20vh;
-    margin: 0 25%;
-    padding-top: 5%;
-  }
-
-  #digitalKey img {
-    display: block;
-    margin: 0 20%;
-    padding-top: 30%;
-    width: 15vw;
-  }
-
-  #promasa a button {
-    transition: all 1s;
-  }
-
-  #promasa a button:hover {
-    transform: scale(1.5);
-  }
-
-  #maikai a button {
-    transition: all 1s;
-  }
-
-  #maikai a button:hover {
-    transform: scale(1.5);
-  }
-
-  #digitalKey a button {
-    transition: all 1s;
-  }
-
-  #digitalKey a button:hover {
-    transform: scale(1.5);
+  100% {
+    transform: translateX(0);
   }
 }
 
-@media (max-width: 768px) {
-  * {
-    box-sizing: border-box;
-    margin: 0;
+.nav-ul li a img {
+  transition: all 1s;
+}
+
+.nav-ul li a img:hover {
+  transform: scale(2.1) rotate(360deg);
+}
+
+.subtitle {
+  animation: bigger 2s;
+  color: #edebd7;
+  font-family: "Courier Prime", monospace;
+  font-size: 150px;
+  text-shadow: -28px 28px 3px rgba(237, 235, 215, 0.25);
+}
+
+@keyframes bigger {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.5);
+    opacity: 0.75;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.shadow-box {
+  animation: upside 2s;
+  background-color: #181818;
+  border-radius: 25px;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+  height: 65vh;
+}
+
+@keyframes upside {
+  0% {
+    transform: translateY(110%);
+    opacity: 0;
   }
 
-  nav {
-    border-radius: 0 0 10px 10px;
-    background-color: rgba(0, 0, 0, 0.1);
-    position: sticky;
-    height: 10vh;
-    width: 100vw;
+  50% {
+    transform: translateY(-100px);
   }
 
-  nav ul {
-    padding: 0;
-    margin: 0;
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.shadow-box img {
+  width: 75%;
+}
+
+h3,
+p {
+  color: #fff;
+  font-family: "Comfortaa", cursive;
+}
+
+.shadow-box button {
+  font-family: "Comfortaa", cursive;
+}
+
+@media (min-width: 768px) {
+  .nav-ul li:nth-child(1) {
+    animation: ghost 1s;
+  }
+
+  .nav-ul li:nth-child(2) {
+    animation: ghost 1.3s;
+  }
+
+  .nav-ul li:nth-child(3) {
+    animation: ghost 1.6s;
+  }
+
+  .nav-ul li:nth-child(4) {
+    animation: ghost 1.9s;
+  }
+
+  .nav-ul li:nth-child(5) {
+    animation: ghost 2.2s;
+  }
+}
+
+@media (max-width: 767px) {
+  .nav-ul {
     display: flex;
-    flex-wrap: wrap;
-  }
-
-  nav ul li {
-    list-style-type: none;
-    margin-top: 25px;
-    width: 20%;
-    padding-left: 7.5%;
-  }
-
-  nav ul li a img {
-    height: 20px;
-    transition: all 1s;
-    width: 20px;
-  }
-
-  #mainContent {
-    height: 90vh;
-  }
-
-  #mainContent p {
-    font-family: 'Comfortaa', cursive;
-    font-size: 12px;
-    margin: 2.5px 0;
-  }
-
-  .topDiv {
-    animation-name: nameTitle;
-    animation-duration: 2s;
-    animation-timing-function: linear;
-    height: 10vh;
-  }
-
-  @keyframes nameTitle {
-    0% {
-      opacity: 0;
-      transform: scale(0.1);
-    }
-    50% {
-      opacity: .5;
-      transform: scale(1.25);
-    }
-    100% {
-      opacity: 1;
-      transform: scale(1);
-    }
-  }
-
-  .topDiv h2 {
-    font-family: 'Lobster Two';
-    font-size: 55px;
-    text-align: center;
-    width: 100vw;
-  }
-
-  .devData {
-    animation: dataDev;
-    animation-duration: 2s;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    height: auto;
     width: 100%;
   }
 
-  @keyframes dataDev {
-    0% {
-      transform: translateX(-750px);
-      opacity: 0;
-    }
-
-    75% {
-      transform: translateX(0px);
-      opacity: .5;
-    }
-
-    90% {
-      transform: translateX(0px);
-      opacity: .9;
-    }
-
-    100% {
-      transform: translateX(0px);
-      opacity: 1;
-    }
-  }
-
-  .itJobs {
-    border: 1px solid rgba(0, 0, 0, .3);
-    border-radius: 25px;
-    box-shadow: 2px 2px 10px #000;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
-    height: 40%;
+  .nav-ul li {
     margin: 10px 0;
-    text-align: center;
-    width: 90vw;
+    padding: 25px;
   }
 
-  .itJobs h6 {
-    font-family: 'Lobster Two';
-    font-size: 24px;
-    margin: 10px 0 5px 0;
+  .subtitle {
+    font-size: 50px;
   }
 
-  .itJobs a {
-    display: flex;
-    justify-content: center;
-    margin: 25px 0;
-    text-decoration: none;
-    width: 90%;
+  .mob-box {
+    height: 85vh;
   }
 
-  .itJobs a button {
-    background-color: rgba(0,0,0,0.1);
-    border: none;
-    border-radius: 10px;
-    font-family: 'Comfortaa', cursive;
-    font-weight: 900;
-    padding: 2.5% 20%;
-    text-decoration: none;
+  .work-box {
+    height: 85%;
   }
 
-  #promasa img {
-    margin: 5px auto;
-    width: 35vw;
+  .shadow-box h3 {
+    font-size: 14px;
   }
 
-  #maikai img {
-    height: 12.5vh;
-    margin: 5px auto;
+  .shadow-box p {
+    font-size: 8px;
   }
 
-  #digitalKey img {
-    margin: 10px auto;
-    width: 35vw;
+  .shadow-box {
+    height: 45%;
+  }
+
+  .shadow-box img {
+    width: 50%;
   }
 }
