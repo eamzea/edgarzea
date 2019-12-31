@@ -103,6 +103,16 @@ p {
   font-family: "Comfortaa", cursive;
 }
 
+@keyframes unghost {
+  0% {
+    transform: translateY(-200px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
 @media (min-width: 768px) {
   .nav-ul li:nth-child(1) {
     animation: ghost 1s;
@@ -137,6 +147,26 @@ p {
   .nav-ul li {
     margin: 10px 0;
     padding: 25px;
+  }
+
+  ul li:nth-child(1) {
+    animation: unghost 1s;
+  }
+
+  ul li:nth-child(2) {
+    animation: unghost 1.3s;
+  }
+
+  ul li:nth-child(3) {
+    animation: unghost 1.6s;
+  }
+
+  ul li:nth-child(4) {
+    animation: unghost 1.9s;
+  }
+
+  ul li:nth-child(5) {
+    animation: unghost 2.2s;
   }
 
   .subtitle {
